@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<div class="w3-content" style="max-width:1400px; position: relative;">
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container w3-padding-16">
+      <h2>User Profile</h2>
+      <p><strong>ID:</strong> {{ user._id }}</p>
+      <p><strong>Name:</strong> {{ user.Name }}</p>
+      <p><strong>Surname:</strong> {{ user.Surname }}</p>
+      <p><strong>Email:</strong> {{ user.Email }}</p>
+      <p><strong>Password:</strong> {{ user.Password }}</p>
+      <p><strong>TCKNO:</strong> {{ user.TCKNO }}</p>
+      <p><strong>Date of Birth:</strong> {{ user.DateOfBirth }}</p>
+      <p><strong>Phone Number:</strong> {{ user.PhoneNumber }}</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

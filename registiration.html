@@ -1,0 +1,42 @@
+{% extends  "base.html" %}
+
+
+{% block content %}
+
+<div class="card-wrapper">
+    <div class="card">
+        <h1 class="center">Create An Account</h1>
+        <form name="signup_form">
+            <label for="name">name</label>
+            <input type="text" name="name" class="field" required>
+            
+            <label for="surname">surname</label>
+            <input type="text" name="surname" class="field" required>
+            
+            <label for="birthday">birthday:</label>
+            <input type="date" id="birthday" name="birthday" required>
+            
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone"  required>
+            
+            <label for="tckno">TCKNO</label>
+            <input type="text" id="tckno" name="tckimlik" required minlength="11" maxlength="11" >
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" class="field" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" class="field" required>
+
+            <input type="submit" value="Sign Up" class="btn">
+          
+        </form>
+        {% if error_message %}
+        <p class="error_message">{{ error_message }}</p>
+        {% endif %}
+    
+
+    </div>
+</div>
+
+{% endblock %}
